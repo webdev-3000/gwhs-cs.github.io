@@ -1,0 +1,352 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #000;
+    min-height: 100vh;
+    overflow: none;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+p {
+    margin: 10px 0;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 20px;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #000;
+    height: 90px;
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 50px;
+    position: fixed;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar .navbar-brand #svg {
+    display: block;
+    background: #000;
+    border-radius: 10px;
+    margin-left: 3px;
+}
+
+
+.navbar .navbar-brand #svg:hover {
+    display: block;
+    background: #66B6E1;
+    border-radius: 10px;
+    margin-left: 3px;
+}
+
+
+.navbar ul {
+    display: flex;
+}
+
+
+.navbar ul a {
+    margin-left: 30px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+
+.navbar ul a:hover {
+    color: #66B6E1;
+    border-bottom: 2px #66B6E1 solid;
+
+}
+
+
+
+/* header section */
+.header {
+    position: relative;
+    background: url('../img/25331.jpg') no-repeat center center/cover;
+    height: 1050px;
+    width: 100%;
+    text-align: center;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9)
+}
+
+.header-inner {
+    position: relative;
+    z-index: 2;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
+.header h5 {
+    font-size: 17px;
+    color: #66B6E1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+.header h1 {
+    font-size: 70px;
+    color: #fff;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.header h2 {
+    font-size: 30px;
+    line-height: 1.9;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.header .btn {
+    color: #fff;
+    background: #66B6E1;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header .data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 100px;
+    color: #fff;
+}
+
+.header .data img {
+    width: 110px;
+    height: 110px;
+    box-shadow: #66B6E1 2px 2px 2px 2px;
+    background: #fff;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+
+.header .data i {
+    width: 100px;
+    height: 100px;
+}
+
+.header .data h3 {
+    font-size: 40px;
+}
+
+.data p {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+
+/* quote section */
+#quote {
+    background: #66B6E1;
+    color: #fff;
+    font-family: 'Petit Formal Script', cursive;
+    height: 160px;
+}
+
+#quote .inner-container {
+    margin: 0 auto;
+    width: 700px;
+}
+
+#quote #quote1 {
+    padding-top: 40px;
+    font-size: 14px;
+
+}
+
+#quote #quote2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    text-align: right;
+}
+
+
+/* cards */
+
+.courses {
+    background: #000;
+    height: 800px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.courses h1 {
+    padding-top: 30px;
+    padding-bottom: 45px;
+    text-align: center;
+    justify-items: center;
+    color: #fff;
+}
+
+.courses span {
+    color: #66B6E1;
+}
+
+.row .card {
+    height: 250px;
+    width: 600px;
+    margin-bottom: 50px;
+    background: rgb(35, 35, 35);
+    border-radius: 25px;
+}
+
+.row .card:hover{
+    box-shadow: #66B6E1 2px 2px 2px 2px;
+}
+
+.row .card-body {
+    padding-top: 30px;
+}
+
+.row .card .course-title {
+    margin-bottom: 5px;
+    color: #0D6EFD;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.row .card h4 {
+    margin-bottom: 5px;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.row .card p {
+    margin-top: 15px;
+    color: #fff;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+.row .card-footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.row .card-footer img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.row .course-img {
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.row a{
+    text-decoration: none;
+}
+.row a:hover {
+    color: #ea5252;
+}
+
+/* course format section */
+.format{
+    background: #fff;
+    height: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.format h1{
+    color: #0275d8;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    text-align: center;
+    justify-items: center;
+}
+
+.format span{
+    color: #000;
+}
+
+.format .format-pic{
+    width: 110px;
+    height: 110px;
+    box-shadow: #66B6E1 2px 2px 2px 2px;
+    background: #fff;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    border-radius: 50%;
+    float: left;
+}
+
+.format .col-sm-4 p{
+    margin-top: 35px;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+}
